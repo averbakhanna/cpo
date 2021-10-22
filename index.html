@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./slick/slick.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/media.css">
+  <link rel="shortcut icon" href="./images/1x/Artboard 2.png">
+</head>
+<body>
+  <div class="header">
+    <ul class="nav">
+      <li class="redMid">ЦПО</li>
+      <li class="nav_text">Центр профессионального образования</li>
+      <li class="nav_text">Мы в соц.сетях:</li>
+      <li><a href="https://www.whatsapp.com/?lang=ru" ><img src="images/whatsapp.svg" alt=""></a>
+        <a href="https://ru-ru.facebook.com/"><img src="images/facebook 1.svg" alt=""></a>
+        <a href="https://www.instagram.com/?hl=ru"><img class="inst" src="images/free-icon-instagram-2111463.png" alt=""></a>
+      </li>
+      <li class="nav_text">Адреса филиалов:</li>
+      <li class="nav_text"> г. Алматы, Мамыр 4-й микрорайон, д165</li>
+      <li class="nav_text"><a href="tel:+7‒707‒775‒05‒33">+7‒707‒775‒05‒33</a></li>
+      
+      <a href=""></a>
+
+    </ul>
+    
+    
+  </div>
+  <div class="menu-tab">
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+</div>
+<div class="menu-hide">
+  <nav>
+    <ul>
+      <li><a href="#firstSlide">О центре</a></li>
+      <li><a href="#secondSlide">Наши Курсы</a></li>
+      <li><a href="#">Галерея</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+</div>
+  <div class="container">
+    <ul id="slides">
+      <li id="firstSlide" class="slide showing">
+      <div class="courses">
+        <div class="courses_top">Курсы крановщика в Алматы от 30 000 тг</div>
+        <ul class="courses_mid">
+          <li>Индивидуальное обучение</li>
+          <li>После обучения: допуск и свидетельство</li>
+          <li>Опытные наставники</li>
+        </ul>
+        <!-- <button class="button_red">Оставить заявку</button> -->
+        <div class="inner_btn">
+          <button onclick="openPopup()">Оставить заявку</button>
+        </div>
+        <div class="inner_popup">
+          <div class="popup">
+            <div class="inner-up-content">
+              <p>Оставить заявку</p>
+              <img src="images/крест.svg" alt="" onclick="closePopup()">
+            </div>
+            <div class="inner-input">
+              <form action="" method="post">
+              <input type="text" class="input-popup one_input" onkeyup="infoInput()" onBlur="this.value=this.value.toUpperCase()" onFocus="this.select()" value="" placeholder="Ваше имя">
+              <input type="text" class="input-popup two_input" onkeyup="infoInput()" value="" placeholder="Ваш телефон">
+              
+              </form>
+              <button class="send_info" onclick="send()" disabled>отправить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="img_bottom">
+        <img src="../project sample 2/images/cran 1 (1).png" alt="">
+        <img src="../project sample 2/images/gruz 1 (1).png" alt="">
+        <img src="../project sample 2/images/mech 1.png" alt="">
+      </span>
+
+      </li>
+      <li id="secondSlide" class="slide">
+        <div class="slidertwo_content">
+          <div class="slidertwo_content_middle">
+          <div class="slidertwo_content_top"><p class="redUp">O центре</p></div>
+          <div class="slidertwo_content_bottom">
+            <p class="slidertwo_content_bottom_text"><span >«Центр Профессионального Образования»</span> основан при Союзе Водителей
+              Казахстана в 2009 г. – автошкола, далее в 2016 г. ТОО «Центр Профессионального
+              Образования» запустил на основании Устава обучение рабочим специальностям.
+              По автошколе выпустили более 3000 курсантов По рабочим специальностям выпустили более 500 курсантов.
+              <br><span>ТОО «Центр Профессионального Образования»</span> проводит обучение по подготовке и
+              переподготовке водителей, механизатором широкого профиля, специалистов по
+              ремонту, обслуживанию эксплуатации транспортных средств, а также краткосрочные
+              курсы не относящиеся к образовательным программам: электрик, слесарь, реставратор
+              кузовов, газоэлектросварщик, машинисты кранов, подъемников и другого погрузочного
+              и разгрузочного оборудования, водитель погрузчика, менеджер ресторанного бизнеса,
+              менеджер гостиничного бизнеса, повар, парикмахер, массажист, трактористы-машинисты на управление тракторами,другими самоходными сельскохозяйственными,
+              мелиоративными и другими дорожно-строительными машинами, обучение наквалификационные свидетельства «преподаватель», «мастер производственногообучения», «мастер обучения вождению во время образовательного процесса».</p>
+            <div class="img_s"></div>
+          </div>
+        </div>
+        </div>
+      </li>
+      <li class="slide">
+        <div class="sliderthree_content">
+          <div class="sliderthree_content_middle">
+            
+            <div class="sliderthree_content_middle_text"><p class="redUp">Наши Курсы</p></div>
+            <div class="sliderthree_content_middle_slider">
+              <div class="carousel_container">
+                
+                <div class="fade">
+                  <div class="one">
+                    <div class="content">
+                      <img class="sliderthree_img" src=".//images/c1 1.png" alt="">
+                      <p class="redMid">Автошкола</p>
+                      <p>Полный курс Теория+ Практика всегоУскоренный курс 1 месяц.
+                        ️Гибкая форма оплаты
+                        ️Профессиональный преподавательский состав ️Удобный график </p>
+                      <p class="redBot">38 000 тенге</p>
+                      <button>Подробнее</button>
+                    </div>
+                </div>
+                <div class="one">
+                  <div class="content">
+                    <img class="sliderthree_img" src="./images/с2 1.png" alt="">
+                    <p class="redMid">Крановщик</p>
+                    <p>Обучение с практикой с опытным наставникомв г. Алматы. По окончании курса выдается свидетельство, и допуск.
+
+                    </p>
+                    <p class="redBot"> 50 000 тенге </p>
+                    <button>Подробнее</button>
+                  </div>
+                </div>
+                <div class="one">
+                  <div class="content">
+                    <img class="sliderthree_img" src="./images/с3 1.png" alt="">
+                    <p class="redMid">Погрузчик</p>
+                    <p>Обучение с практикой с опытным наставникомв г. Алматы. По окончании курса выдается свидетельство, и допуск.
+
+                      
+
+                    </p>
+                    <p class="redBot"> 45 000 тенге </p>
+                    <button>Подробнее</button>
+                  </div>
+              </div>
+                  
+                  
+                  <!-- <div id="cloneTwo" class="one">
+                  <div class="content">
+                      <img class="sliderthree_img" src="./images/с3 1.png" alt="">
+                      <p class="redMid">Погрузчик</p>
+                      <p>Обучение с практикой с опытным наставникомв г. Алматы. По окончании курса выдается свидетельство, и допуск.
+
+                        
+
+                      </p>
+                      <p class="redBot"> 45 000 тенге </p>
+                      <button>Подробнее</button>
+                  </div>
+                  </div>
+                  
+                  
+                    
+                  <div class="one">
+                      <div class="content">
+                        <img class="sliderthree_img" src=".//images/c1 1.png" alt="">
+                        <p class="redMid">Автошкола</p>
+                        <p>Полный курс Теория+ Практика всегоУскоренный курс 1 месяц.
+                          ️Гибкая форма оплаты
+                          ️Профессиональный преподавательский состав ️Удобный график </p>
+                        <p class="redBot">38 000 тенге</p>
+                        <button>Подробнее</button>
+                      </div>
+                  </div>
+                  
+                  
+                  <div class="one">
+                      <div class="content">
+                        <img class="sliderthree_img" src="./images/с2 1.png" alt="">
+                        <p class="redMid">Крановщик</p>
+                        <p>Обучение с практикой с опытным наставникомв г. Алматы. По окончании курса выдается свидетельство, и допуск.
+
+                        </p>
+                        <p class="redBot"> 50 000 тенге </p>
+                        <button>Подробнее</button>
+                      </div>
+                  </div>
+                  
+                  
+                  <div class="one">
+                      <div class="content">
+                        <img class="sliderthree_img" src="./images/с3 1.png" alt="">
+                        <p class="redMid">Погрузчик</p>
+                        <p>Обучение с практикой с опытным наставникомв г. Алматы. По окончании курса выдается свидетельство, и допуск.
+
+                          
+
+                        </p>
+                        <p class="redBot"> 45 000 тенге </p>
+                        <button>Подробнее</button>
+                      </div>
+                  </div>
+                  <div id="cloneOne" class="one">
+                      <div class="content">
+                        <img class="sliderthree_img" src=".//images/c1 1.png" alt="">
+                        <p class="redMid">Автошкола</p>
+                        <p>Полный курс Теория+ Практика всегоУскоренный курс 1 месяц.
+                          ️Гибкая форма оплаты
+                          ️Профессиональный преподавательский состав ️Удобный график </p>
+                        <p class="redBot">38 000 тенге</p>
+                        <button>Подробнее</button>
+                      </div>
+                    </div> -->
+                    
+                    
+                  
+                  
+                </div>
+              </div>
+            </div>
+          
+            <!-- <button  id="prevBtn">Prev</button>
+            <button  id="nextBtn">Next</button> -->
+      </div>
+      
+      </div>
+
+      </li>
+      <li class="slide">
+        <div class="sliderthree_content">
+          <div class="sliderthree_content_middle">
+            
+            <div class="sliderthree_content_middle_text"><p class="redUp">Галерея </p></div>
+            <div class="sliderfour_content_middle_slider">
+              <div class="inner_btn">
+                <button class="nav-btn" type="button" data-tab="#tab_1">Техника</button>
+                <button class="nav-btn" type="button" data-tab="#tab_2">Центр</button>
+                <button class="nav-btn" type="button" data-tab="#tab_3">Машины</button>
+              </div>
+          
+              <div class="tabs__content">
+                <div class="tabs_page" id="tab_1">
+                  <div class="tab_1_img">
+                    <div class="tab_1_img_content">
+                      <img src="images/4.png" alt="">
+                      <img src="images/4.png" alt="">
+                      <img src="images/4.png" alt="">
+                    </div>
+                    <div class="tab_1_img_content">
+                      <img src="images/4.png" alt="">
+                      <img src="images/4.png" alt="">
+                      <img src="images/4.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs_page" id="tab_2">
+                  <div class="tab_1_img">
+                  <div class="tab_1_img_content">
+                    <img src="images/office.jpeg" alt="">
+                    <img src="images/office.jpeg" alt="">
+                    <img src="images/office.jpeg" alt="">
+                  </div>
+                  <div class="tab_1_img_content">
+                    <img src="images/office.jpeg" alt="">
+                    <img src="images/office.jpeg" alt="">
+                    <img src="images/office.jpeg" alt="">
+                  </div>
+                </div></div>
+                <div class="tabs_page" id="tab_3">
+                  <div class="tab_1_img">
+                    <div class="tab_1_img_content">
+                      <img src="images/с2 1.png" alt="">
+                      <img src="images/с2 1.png" alt="">
+                      <img src="images/с2 1.png" alt="">
+                    </div>
+                    <div class="tab_1_img_content">
+                      <img src="images/с2 1.png" alt="">
+                      <img src="images/с2 1.png" alt="">
+                      <img src="images/с2 1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </li>
+     <li class="slide">
+        <div class="sliderthree_content">
+          <div class="sliderthree_content_middle">
+            
+            <div class="sliderthree_content_middle_text"><p class="redUp">Контакты</p></div>
+            <div class="sliderfive_content_middle_slider">
+              <div class="five_left">
+                <ul>
+                  <li><span>Адрес:</span> г. Алматы,Мамыр 4-й микрорайон, дом165</li>
+                  <li> <span> Телефоны:</span> +7 (727) 380‒02‒34
+                  </li>
+                  <li><span>Почта:</span>  <br> info@autocpo.kz</li>
+                  <li><span>Оставьте заявку</span><br> Наш менеджер свяжется с Вами через 15 минут</li>
+                  <li><input type=""></li>
+                  <li><input type=""></li>
+                  <div class="inner_btnn">
+                    <button onclick="openPopupp()">Оставить заявку</button>
+                  </div>
+                  <div class="inner_popupp">
+                    <div class="popupp">
+                      <div class="inner-up-contentt">
+                        <p>Оставить заявку</p>
+                        <img src="images/крест.svg" alt="" onclick="closePopupp()">
+                      </div>
+                      <div class="inner-inputt">
+                        <form action="" method="post">
+                        <input type="text" class="input-popup one_inputt" onkeyup="infoInputt()" onBlur="this.value=this.value.toUpperCase()" onFocus="this.select()" value="" placeholder="Ваше имя">
+                        <input type="text" class="input-popup two_inputt" onkeyup="infoInputt()" value="" placeholder="Ваш телефон">
+                        
+                        </form>
+                        <button class="send_infoo" onclick="send()" disabled>отправить</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                </ul>
+              </div>
+              <div class="five_right">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.6521784566144!2d76.85095951547632!3d43.216784188558826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883684943e99bf7%3A0xa8d47b4bb9dc40b!2z0JDQstGC0L7RiNC60L7Qu9CwINCh0L7RjtC30LAg0LLQvtC00LjRgtC10LvQtdC5INCg0Jo!5e0!3m2!1sru!2skz!4v1633627128621!5m2!1sru!2skz"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>              </div>
+
+             
+                  
+                  
+            </div>
+          </div>
+        </div>
+          
+         
+      </div>
+      
+      </div>
+
+      </li>
+    </ul>
+    <div class="buttons">
+      <button class="controls" id="previous">&lt;</button>
+
+      <!-- <button class="controls" id="pause">&#10074;&#10074;</button> -->
+
+      <button class="controls" id="next">&gt;</button>
+    </div>
+  </div>
+  
+
+
+ <script src="https://code.jquery.com/jquery-3.6.0.slim.js" 
+ integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" 
+ crossorigin="anonymous"></script>
+ <script src="./slick/slick.min.js"></script>
+ <script src="index.js"></script>
+</body>
+</html>
